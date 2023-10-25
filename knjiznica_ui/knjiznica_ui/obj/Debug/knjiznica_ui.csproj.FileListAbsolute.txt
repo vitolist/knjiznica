@@ -1,0 +1,11 @@
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\bin\Debug\knjiznica_ui.exe.config
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\bin\Debug\knjiznica_ui.exe
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\bin\Debug\knjiznica_ui.pdb
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.csproj.AssemblyReference.cache
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.csproj.SuggestedBindingRedirects.cache
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.Properties.Resources.resources
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.csproj.GenerateResource.cache
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.csproj.CoreCompileInputs.cache
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.exe
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.pdb
+D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.Form1.resources
