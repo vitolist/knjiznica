@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,13 @@ namespace knjiznica_ui
     {
         Knjiznica knjiznica = new Knjiznica();
 
+       
         public Form1()
         {
             InitializeComponent();
+
+            MySQLDB db = new MySQLDB();
+            db.Insert();
 
             knjiznica.dodajKnjigu("Hamlet");
             knjiznica.dodajKnjigu("Hamlet");
@@ -55,19 +60,73 @@ namespace knjiznica_ui
         private void registerButton_Click(object sender, EventArgs e)
         {
             string ime = imeTextBox.Text;
-            //string prezime = prezimeTextBox.Text;
-            string prezime = "test";
+            string prezime = prezimeTextBox.Text;
 
-            if(ime != "" && prezime != "")
+            if (ime != "" && prezime != "")
             {
-                knjiznica.dodajKorisnika(ime);
+                knjiznica.dodajKorisnika(ime + " " + prezime);
                 korisniciList.Items.Clear();
-                foreach(Osoba o in knjiznica.vratiKorisnike())
+                foreach (Osoba o in knjiznica.vratiKorisnike())
                 {
                     korisniciList.Items.Add(o.getIme());
                 }
             }
         }
+
+        private void dodajButton_Click(object sender, EventArgs e)
+        {
+            string naziv = nazivTextBox.Text;
+            string autor = autorTextBox.Text;
+
+            if (naziv != "")
+            {
+                knjiznica.dodajKnjigu(autor + " - " + naziv);
+                knjigeList.Items.Clear();
+                foreach (Knjiga k in knjiznica.vratiKnjige())
+                {
+                    knjigeList.Items.Add(k.getNaziv());
+                }
+            }
+        }
+    }
+
+    public class MySQLDB
+    {
+        private static string SERVERNAME;
+        private static string USERNAME;
+        private static string PASSWORD;
+        private static string NAME;
+        SqlConnection connection;
+
+
+        public MySQLDB()
+        {
+            //string connectionString = String.Format(
+            //    "Server={0};Database={1};User ID={2};Password={3};",
+            //    SERVERNAME, USERNAME, PASSWORD, NAME
+            //    );
+
+            string connectionString = String.Format(
+                "Data Source={0};Initial Catalog={1};User ID={2};Password={3};",
+                SERVERNAME, USERNAME, PASSWORD, NAME
+                );
+
+            connection = new SqlConnection(connectionString);
+            connection.Open();
+            MessageBox.Show("OTVORENO");
+        }
+
+        public void Insert()
+        {
+            SqlCommand naredba;
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            string sql = "INSERT INTO log (naziv, opis) VALUES ('PROBA', 'TEST')";
+            naredba = new SqlCommand(sql, connection);
+            adapter.InsertCommand = new SqlCommand(sql, connection);
+            adapter.InsertCommand.ExecuteNonQuery();
+        }
+
+
     }
 
     public class Knjiga
