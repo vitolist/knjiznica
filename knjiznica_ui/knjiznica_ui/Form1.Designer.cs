@@ -42,6 +42,7 @@
             this.autorTextBox = new System.Windows.Forms.TextBox();
             this.nazivTextBox = new System.Windows.Forms.TextBox();
             this.korisniciList = new System.Windows.Forms.ListBox();
+            this.knjigeList = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -162,14 +163,24 @@
             this.korisniciList.FormattingEnabled = true;
             this.korisniciList.Location = new System.Drawing.Point(19, 179);
             this.korisniciList.Name = "korisniciList";
-            this.korisniciList.Size = new System.Drawing.Size(120, 199);
+            this.korisniciList.Size = new System.Drawing.Size(163, 199);
             this.korisniciList.TabIndex = 13;
+            this.korisniciList.SelectedIndexChanged += new System.EventHandler(this.korisniciList_SelectedIndexChanged);
+            // 
+            // knjigeList
+            // 
+            this.knjigeList.FormattingEnabled = true;
+            this.knjigeList.Location = new System.Drawing.Point(258, 179);
+            this.knjigeList.Name = "knjigeList";
+            this.knjigeList.Size = new System.Drawing.Size(163, 199);
+            this.knjigeList.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.knjigeList);
             this.Controls.Add(this.korisniciList);
             this.Controls.Add(this.dodajButton);
             this.Controls.Add(this.label6);
@@ -207,6 +218,7 @@
         private System.Windows.Forms.TextBox autorTextBox;
         private System.Windows.Forms.TextBox nazivTextBox;
         private System.Windows.Forms.ListBox korisniciList;
+        private System.Windows.Forms.ListBox knjigeList;
     }
 }
 

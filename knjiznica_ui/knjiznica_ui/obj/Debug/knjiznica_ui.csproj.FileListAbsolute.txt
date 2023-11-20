@@ -9,3 +9,13 @@ D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.csproj.Cor
 D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.exe
 D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.pdb
 D:\LeonKolaric3RT\C#\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.Form1.resources
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.csproj.AssemblyReference.cache
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.Form1.resources
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.Properties.Resources.resources
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.csproj.GenerateResource.cache
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.csproj.CoreCompileInputs.cache
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.exe
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\obj\Debug\knjiznica_ui.pdb
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\bin\Debug\knjiznica_ui.exe.config
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\bin\Debug\knjiznica_ui.exe
+C:\Users\ucenik\Source\Repos\knjiznica\knjiznica_ui\knjiznica_ui\bin\Debug\knjiznica_ui.pdb

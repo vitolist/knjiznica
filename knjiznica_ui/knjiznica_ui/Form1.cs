@@ -88,27 +88,28 @@ namespace knjiznica_ui
                 }
             }
         }
+
+        private void korisniciList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class MySQLDB
     {
-        private static string SERVERNAME;
-        private static string USERNAME;
-        private static string PASSWORD;
-        private static string NAME;
+        private static string SERVERNAME = @"localhost\sqlexpress";
+        private static string USERNAME = "vito";
+        private static string PASSWORD = "micko";
+        private static string NAME = "knjiznica_ui";
         SqlConnection connection;
 
 
         public MySQLDB()
         {
-            //string connectionString = String.Format(
-            //    "Server={0};Database={1};User ID={2};Password={3};",
-            //    SERVERNAME, USERNAME, PASSWORD, NAME
-            //    );
 
             string connectionString = String.Format(
                 "Data Source={0};Initial Catalog={1};User ID={2};Password={3};",
-                SERVERNAME, USERNAME, PASSWORD, NAME
+                SERVERNAME, NAME, USERNAME, PASSWORD
                 );
 
             connection = new SqlConnection(connectionString);
@@ -116,12 +117,10 @@ namespace knjiznica_ui
             MessageBox.Show("OTVORENO");
         }
 
-        public void Insert()
+        public void Insert(string sql)
         {
-            SqlCommand naredba;
             SqlDataAdapter adapter = new SqlDataAdapter();
-            string sql = "INSERT INTO log (naziv, opis) VALUES ('PROBA', 'TEST')";
-            naredba = new SqlCommand(sql, connection);
+            //string sql = "INSERT INTO log (naziv, opis) VALUES ('PROBA', 'TEST')";
             adapter.InsertCommand = new SqlCommand(sql, connection);
             adapter.InsertCommand.ExecuteNonQuery();
         }
